@@ -1,0 +1,83 @@
+<javax.servlet.ServletRequest: java.lang.String getParameter(java.lang.String)> -> _SOURCE_
+<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)> -> _SOURCE_
+<javax.persistence.EntityManager: javax.persistence.TypedQuery createQuery(java.lang.String,java.lang.Class)> -> _SINK_
+<javax.servlet.http.HttpServletResponse: void sendRedirect(java.lang.String)> -> _SINK_
+<java.io.File: boolean delete()> -> _SINK_
+<java.io.PrintStream: void println(java.lang.String)> -> _SINK_
+<java.io.PrintStream: void println(java.lang.Object)> -> _SINK_
+<java.io.PrintWriter: void flush()> -> _SINK_
+<org.slf4j.Logger: void info(org.slf4j.Marker,java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)> -> _SINK_
+%<javax.servlet.http.HttpServletRequest: java.lang.String getHeader(java.lang.String)> -> _SOURCE_
+<net.logstash.logback.marker.Markers: net.logstash.logback.marker.LogstashMarker appendEntries(java.util.Map)> -> _BOTH_
+<cn.hutool.json.JSONUtil: cn.hutool.json.JSON parse(java.lang.Object)> -> _BOTH_
+<synthetic.method.HttpServletRequestImpl: void <init>()> -> _SOURCE_
+<synthetic.method.HttpServletResponseImpl: void <init>()> -> _SOURCE_
+<javax.servlet.http.HttpServletRequest: java.lang.Object getAttribute(java.lang.String)> -> _SOURCE_
+<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()> -> _SOURCE_
+<org.springframework.security.core.context.SecurityContext: org.springframework.security.core.Authentication getAuthentication()> -> _SOURCE_
+<javax.servlet.http.HttpServletRequest: java.lang.String getRemoteUser()> -> _SOURCE_
+<org.springframework.ui.Model: org.springframework.ui.Model addAttribute(java.lang.String,java.lang.Object)> -> _SOURCE_
+
+<org.apache.shiro.cache.Cache: java.lang.Object put(java.lang.Object,java.lang.Object)> -> _SINK_
+<net.sf.ehcache.Cache: void put(net.sf.ehcache.Element)> -> _SINK_
+<org.slf4j.Logger: void debug(java.lang.String)> -> _SINK_
+<org.apache.tools.zip.ZipOutputStream: void write(byte[],int,int)> -> _SINK_
+<org.apache.tools.zip.ZipOutputStream: void putNextEntry(org.apache.tools.zip.ZipEntry)> -> _SINK_
+<org.slf4j.Logger: void warn(java.lang.String,java.lang.Object[])> -> _SINK_
+<redis.clients.jedis.Jedis: java.lang.String set(byte[],byte[])> -> _SINK_
+<redis.clients.jedis.Jedis: java.lang.Long rpush(java.lang.String,java.lang.String[])> -> _SINK_
+<redis.clients.jedis.Jedis: java.lang.Long sadd(java.lang.String,java.lang.String[])> -> _SINK_
+<redis.clients.jedis.Jedis: java.util.Map hgetAll(java.lang.String)> -> _SINK_
+<redis.clients.jedis.Jedis: java.lang.String hmset(java.lang.String,java.util.Map)> -> _SINK_
+<org.apache.commons.mail.HtmlEmail: java.lang.String send()> -> _SINK_
+<org.apache.commons.mail.HtmlEmail: void setAuthentication(java.lang.String,java.lang.String)> -> _SINK_
+<java.io.ByteArrayOutputStream: void write(byte[],int,int)> -> _SINK_
+%<com.fasterxml.jackson.databind.ObjectMapper: java.lang.String writeValueAsString(java.lang.Object)> -> _SINK_
+<redis.clients.jedis.Jedis: java.lang.String set(java.lang.String,java.lang.String,redis.clients.jedis.params.SetParams)> -> _SINK_
+<org.springframework.security.crypto.password.PasswordEncoder: java.lang.String encode(java.lang.CharSequence)> -> _SOURCE_
+
+
+
+% mall Source
+<com.macro.mall.dto.UpdateAdminPasswordParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.PmsProductCategoryParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.OmsOrderQueryParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.OmsReceiverInfoParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.OmsMoneyInfoParam: void <init>()> -> _SOURCE_
+% MultipartFile -> _SOURCE_
+<com.macro.mall.dto.OmsReturnApplyQueryParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.OmsUpdateStatusParam: void <init>()> -> _SOURCE_
+<com.macro.mall.model.OmsOrderReturnReason: void <init>()> -> _SOURCE_
+<com.macro.mall.model.OmsOrderSetting: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.PmsBrandParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.PmsProductAttributeParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.PmsProductParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.PmsProductQueryParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.SmsCouponParam: void <init>()> -> _SOURCE_
+<com.macro.mall.model.SmsFlashPromotion: void <init>()> -> _SOURCE_
+<com.macro.mall.model.SmsFlashPromotionProductRelation: void <init>()> -> _SOURCE_
+<com.macro.mall.model.SmsFlashPromotionSession: void <init>()> -> _SOURCE_
+<com.macro.mall.model.SmsHomeAdvertise: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.UmsAdminParam: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.UmsAdminLoginParam: void <init>()> -> _SOURCE_
+<com.macro.mall.model.UmsAdmin: void <init>()> -> _SOURCE_
+<com.macro.mall.dto.UpdateAdminPasswordParam: void <init>()> -> _SOURCE_
+<com.macro.mall.model.UmsMenu: void <init>()> -> _SOURCE_
+<com.macro.mall.model.UmsResourceCategory: void <init>()> -> _SOURCE_
+<com.macro.mall.model.UmsResource: void <init>()> -> _SOURCE_
+<com.macro.mall.model.UmsRole: void <init>()> -> _SOURCE_
+
+<com.macro.mall.demo.dto.PmsBrandDto: void <init>()> -> _SOURCE_
+<com.macro.mall.model.PmsBrand: void <init>()> -> _SOURCE_
+
+<com.macro.mall.portal.domain.MemberBrandAttention: void <init>()> -> _SOURCE_
+<com.macro.mall.portal.domain.MemberProductCollection: void <init>()> -> _SOURCE_
+<com.macro.mall.portal.domain.MemberReadHistory: void <init>()> -> _SOURCE_
+<com.macro.mall.model.OmsCartItem: void <init>()> -> _SOURCE_
+<com.macro.mall.portal.domain.OrderParam: void <init> -> _SOURCE_
+<com.macro.mall.portal.domain.OmsOrderReturnApplyParam: void <init>()> -> _SOURCE_
+<com.macro.mall.model.UmsMemberReceiveAddress: void <init>()> -> _SOURCE_
+<com.macro.mall.portal.controller.UmsMemberController$$SpringCGLIB: java.lang.String getpassword()>  -> _SOURCE_
+%<com.macro.mall.portal.controller.UmsMemberController$$SpringCGLIB: java.lang.String getusername()>  -> _SOURCE_
+%<com.macro.mall.portal.controller.UmsMemberController$$SpringCGLIB: java.lang.String getauthCode()>  -> _SOURCE_

@@ -1,0 +1,10 @@
+*/build/
+*/target/
+dataleak/target/
+/.metadata
+/.recommenders
+.idea/
+*.iml
+.gradle
+.DS_Store
+*/sootOutput

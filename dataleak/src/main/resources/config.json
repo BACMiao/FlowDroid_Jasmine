@@ -1,0 +1,5 @@
+{
+  "source": "/Users/jasmine/FlowDroidPlus/dataleak/src/main/resources/source.json",
+  "main_class": "synthetic.method.dummyMainClass",
+  "edge_config": "/Users/jasmine/FlowDroidPlus/dataleak/src/main/resources/config.properties"
+}
